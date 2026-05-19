@@ -141,23 +141,43 @@ p { margin: 0 0 1em; }
 .btn--ghost:hover { background: var(--green-deep); color: var(--cream); }
 
 
-/* Анимация курсора у CTA — указатель “пальчик” пульсирует возле кнопки */
-.btn--cursor .cursor-hint {
+/* Привлекает внимание к CTA: лёгкое «дыхание» кнопки и два расходящихся кольца-пульса */
+.btn--cursor {
+  position: relative;
+  overflow: visible;
+  animation: ctaBreath 2.6s ease-in-out infinite;
+}
+
+.btn--cursor::before,
+.btn--cursor::after {
+  content: "";
   position: absolute;
-  width: 22px;
-  height: 22px;
-  right: -6px;
-  top: -6px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .25));
-  animation: cursorTap 1.8s ease-in-out infinite;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--green-deep);
   pointer-events: none;
+  opacity: 0;
+  animation: ctaPulse 2.6s ease-out infinite;
+  z-index: -1;
 }
-@keyframes cursorTap {
-  0%, 100% { transform: translate(0, 0) rotate(-8deg); }
-  40%      { transform: translate(-6px, -6px) rotate(-8deg); }
-  55%      { transform: translate(0, 0) rotate(-8deg); }
-  70%      { transform: translate(-3px, -3px) rotate(-8deg); }
+.btn--cursor::after { animation-delay: 1.3s; }
+
+/* На лаймовой кнопке (тёмная секция) кольца — тёплого лаймового цвета */
+.btn--lime.btn--cursor::before,
+.btn--lime.btn--cursor::after { border-color: var(--lime); }
+
+@keyframes ctaPulse {
+  0%   { transform: scale(1);     opacity: 0.55; }
+  100% { transform: scale(1.18);  opacity: 0;    }
 }
+
+@keyframes ctaBreath {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-2px); }
+}
+
+/* Перебиваем hover-translate из .btn--primary, чтобы не «дёргалось» поверх breath */
+.btn--cursor:hover { animation-play-state: paused; }
 
 
 /* ============================================================
@@ -847,7 +867,9 @@ p { margin: 0 0 1em; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
-  .btn--cursor .cursor-hint { animation: none; }
+  .btn--cursor,
+  .btn--cursor::before,
+  .btn--cursor::after { animation: none; }
 }
 
 
