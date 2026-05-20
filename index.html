@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Стратегическая сессия «Навигатор здоровья» — комплексная диагностика питания и образа жизни от нутрициолога Маргариты Луневой." />
+  <meta name="description" content="Стратегическая сессия «Навигатор здоровья» — комплексная диагностика питания и образа жизни от Маргариты Луневой." />
   <title>Навигатор здоровья — Маргарита Лунева</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><radialGradient id='g' cx='32%25' cy='32%25' r='80%25'><stop offset='0%25' stop-color='%23fff'/><stop offset='40%25' stop-color='%23C8DC4A'/><stop offset='100%25' stop-color='%237FA68A'/></radialGradient></defs><circle cx='16' cy='16' r='15' fill='url(%23g)'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><radialGradient id='g' cx='30%25' cy='30%25' r='80%25'><stop offset='0%25' stop-color='%23FFFCF7'/><stop offset='40%25' stop-color='%23C8DC4A'/><stop offset='100%25' stop-color='%237FA68A'/></radialGradient></defs><path d='M16 2C8 4 3 10 3 17c0 7 6 13 13 13s14-6 14-14c0-7-6-13-14-14z' fill='url(%23g)'/><path d='M16 24c-4-3-7-7-7-12 0-3 3-5 7-5s7 2 7 5c0 5-3 9-7 12z' fill='none' stroke='%232F4A36' stroke-width='1.4'/><path d='M16 24V11' stroke='%232F4A36' stroke-width='1.2' stroke-linecap='round'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,9 +16,21 @@
   <!-- ───────────── NAV ───────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#top" class="nav__logo">
-        <span class="nav__mark" aria-hidden="true"></span>
-        <span>Маргарита&nbsp;Лунева</span>
+      <a href="#top" class="nav__logo" aria-label="На главную">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <defs>
+              <radialGradient id="logoGrad" cx="30%" cy="30%" r="80%">
+                <stop offset="0%" stop-color="#FFFCF7"/>
+                <stop offset="40%" stop-color="#C8DC4A"/>
+                <stop offset="100%" stop-color="#7FA68A"/>
+              </radialGradient>
+            </defs>
+            <path d="M16 2C8 4 3 10 3 17c0 7 6 13 13 13s14-6 14-14c0-7-6-13-14-14z" fill="url(#logoGrad)"/>
+            <path d="M16 24c-4-3-7-7-7-12 0-3 3-5 7-5s7 2 7 5c0 5-3 9-7 12z" fill="none" stroke="#2F4A36" stroke-width="1.4"/>
+            <path d="M16 24V11" stroke="#2F4A36" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
       </a>
 
       <button class="nav__burger" aria-label="Меню" aria-expanded="false">
@@ -26,13 +38,13 @@
       </button>
 
       <nav class="nav__menu" aria-label="Основная навигация">
-        <a href="#about-program">О Навигаторе</a>
+        <a href="#audience">Кому подходит</a>
         <a href="#steps">Этапы</a>
-        <a href="#reviews">Отзывы</a>
+        <a href="#benefits">Результат</a>
         <a href="#price">Стоимость</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#about-me">Обо мне</a>
         <a href="#faq">FAQ</a>
-        <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="btn btn--small">Записаться</a>
       </nav>
     </div>
   </header>
@@ -57,19 +69,19 @@
 
       <div class="container hero__grid">
         <div class="hero__copy reveal">
-          <p class="eyebrow">Стратегическая сессия</p>
+          <p class="eyebrow eyebrow--wide">Стратегическая сессия<br/>нутрициолога и специалиста медицины образа жизни</p>
           <h1 class="display">
             Навигатор <em>здоровья</em>
           </h1>
-          <p class="hero__lead">
-            Получите дорожную карту привычек по питанию и образу жизни для повышения энергии и продуктивности, решения вашего запроса по здоровью. Вы почувствуете изменения в вашем состоянии уже после первой недели внедрения рекомендаций.
-          </p>
           <p class="hero__sub">
-            Комплексная диагностика вашего питания и образа жизни для решения ключевого запроса по здоровью.
+            Комплексная диагностика вашего питания и образа жизни
+          </p>
+          <p class="hero__lead">
+            Получите дорожную карту привычек по питанию и образу жизни для повышения энергии и продуктивности, решения вашего ключевого запроса по здоровью. Вы почувствуете изменения в вашем состоянии уже после первой недели внедрения рекомендаций.
           </p>
           <div class="hero__cta">
             <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="btn btn--primary btn--cursor">
-              Купить за&nbsp;5000&nbsp;₽
+              Купить
             </a>
             <a href="#steps" class="btn btn--ghost">Как проходит</a>
           </div>
@@ -77,16 +89,16 @@
 
         <div class="hero__photo reveal">
           <div class="photo photo--blob">
-            <img src="assets/margarita-hero.jpg" alt="Маргарита Лунева — нутрициолог" loading="eager" width="1024" height="1536" />
+            <img src="assets/margarita-hero.jpg" alt="Маргарита Лунева" loading="eager" width="1024" height="1536" />
           </div>
-          <span class="photo__badge">Нутрициолог</span>
         </div>
       </div>
     </section>
 
 
     <!-- ───────────── КОМУ ПОДХОДИТ ───────────── -->
-    <section class="section section--cream" id="about-program">
+    <section class="section section--soft" id="audience">
+      <div class="bloom bloom--lime audience__bloom" aria-hidden="true"></div>
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Сессия по Навигатору</p>
@@ -95,43 +107,85 @@
 
         <ul class="audience">
           <li class="audience__card reveal">
-            <span class="audience__ico" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M7.5 24.5l2.8-2.8M21.7 10.3l2.8-2.8"/><circle cx="16" cy="16" r="3.5"/></svg>
+            <span class="illust illust--moon" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <defs>
+                  <radialGradient id="il1" cx="30%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#E4EFA6" stop-opacity="0.95"/>
+                    <stop offset="100%" stop-color="#E4EFA6" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M60 30c-12 4-20 14-20 26 0 8 4 14 10 18-15-2-26-14-26-29 0-16 14-29 31-29 6 0 11 1 16 4-4 2-8 6-11 10z" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="74" cy="34" r="1.8" fill="#2F4A36"/>
+                <circle cx="80" cy="48" r="1.2" fill="#2F4A36"/>
+                <circle cx="70" cy="60" r="1.2" fill="#2F4A36"/>
+              </svg>
             </span>
             <p>Ощущаете постоянную усталость несмотря на количество часов сна, сложно проснуться утром, есть нехватка сил вечером, каша в голове, апатия, плохое настроение, нет мотивации на все свои идеи, не понимаете, почему такой провал в энергии</p>
           </li>
 
           <li class="audience__card reveal">
-            <span class="audience__ico" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a10 10 0 0 1 20 0"/><path d="M2 26h28"/><path d="M16 14v-4"/><circle cx="16" cy="8" r="2"/></svg>
+            <span class="illust" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M28 70h44" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M50 70V36" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M50 36c-6-6-12-6-18 0M50 36c6-6 12-6 18 0" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+                <ellipse cx="32" cy="50" rx="10" ry="6" fill="none" stroke="#2F4A36" stroke-width="1.4"/>
+                <ellipse cx="68" cy="50" rx="10" ry="6" fill="none" stroke="#2F4A36" stroke-width="1.4"/>
+                <circle cx="50" cy="30" r="3" fill="#C8DC4A" stroke="#2F4A36" stroke-width="1.2"/>
+              </svg>
             </span>
             <p>Поняли, что летняя одежда уже маловата, хотите перезагрузить организм, избавиться от лишних кг, но не знаете, с чего начать, или пробовали диеты, но не особо помогают</p>
           </li>
 
           <li class="audience__card reveal">
-            <span class="audience__ico" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4c4 0 8 3 8 8 0 6-8 16-8 16S8 18 8 12c0-5 4-8 8-8z"/><circle cx="16" cy="12" r="2.5"/></svg>
+            <span class="illust" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M50 22c-6 12-18 18-18 32 0 12 8 22 18 22s18-10 18-22c0-14-12-20-18-32z" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M50 38c-4 6-10 12-10 22 0 8 4 14 10 14" fill="none" stroke="#2F4A36" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="62" cy="42" r="2.5" fill="#C8DC4A"/>
+              </svg>
             </span>
             <p>Не нравится состояние кожи, волос, ногтей</p>
           </li>
 
           <li class="audience__card reveal">
-            <span class="audience__ico" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6c0 6 12 4 12 12 0 6-10 8-10 8"/><path d="M22 6c0 6-12 4-12 12 0 6 10 8 10 8"/></svg>
+            <span class="illust" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M36 28c-4 4-4 10 0 14s14 4 14 12-10 8-14 12 0 12 4 14" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M64 32c4 4 4 10 0 14s-14 4-14 12 10 8 14 12-2 12-6 14" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="3" fill="#C8DC4A"/>
+              </svg>
             </span>
             <p>Неприятные симптомы в ЖКТ (боли, вздутия, газообразования и др.) мешают вам жить</p>
           </li>
 
           <li class="audience__card reveal">
-            <span class="audience__ico" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="20" height="18" rx="3"/><path d="M11 8V5h10v3M11 16h10M11 20h7"/></svg>
+            <span class="illust" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <rect x="32" y="32" width="36" height="42" rx="4" fill="none" stroke="#2F4A36" stroke-width="1.6"/>
+                <path d="M42 32v-4h16v4" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M40 46h20M40 54h20M40 62h14" stroke="#2F4A36" stroke-width="1.4" stroke-linecap="round"/>
+                <circle cx="64" cy="62" r="2.5" fill="#C8DC4A"/>
+              </svg>
             </span>
             <p>У вас есть диагноз, и хотите подойти к нему комплексно</p>
           </li>
 
           <li class="audience__card reveal">
-            <span class="audience__ico" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28s-10-6-10-15a6 6 0 0 1 10-4.5A6 6 0 0 1 26 13c0 9-10 15-10 15z"/></svg>
+            <span class="illust" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M50 70c-4-12-12-18-12-30 0-7 5-12 12-12s12 5 12 12c0 12-8 18-12 30z" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M50 70V38" stroke="#2F4A36" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M50 52c-3-2-5-4-5-7M50 58c3-2 5-4 5-7" stroke="#2F4A36" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                <circle cx="50" cy="30" r="2.5" fill="#C8DC4A"/>
+              </svg>
             </span>
             <p>Цените свое здоровье и уровень энергии, хотите профилактировать заболевания, иметь классное самочувствие и достигать своих целей</p>
           </li>
@@ -141,28 +195,34 @@
 
 
     <!-- ───────────── ЭТАПЫ ───────────── -->
-    <section class="section section--soft" id="steps">
+    <section class="section section--cream" id="steps">
       <div class="bloom bloom--lime steps__bloom" aria-hidden="true"></div>
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Как проходит</p>
           <h2>Этапы Навигатора</h2>
-          <p class="section__lead">
-            Я помогу определить, где в питании и образе жизни закрались утечки здоровья, красоты и энергичного самочувствия, подскажу шаги для наиболее быстрого и эффективного решения запроса.
-          </p>
         </header>
 
         <ol class="timeline">
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
             <h3>Анкета перед сессией</h3>
-            <p>Заполнение короткой анкеты перед сессией, чтобы понять ключевой волнующий вопрос по здоровью, текущую ситуацию, желаемый результат (точку А и точку Б).</p>
+            <p>Заполнение короткой анкеты перед сессией, чтобы понять ключевой волнующий вопрос по здоровью, текущую ситуацию, желаемый результат (точку А и точку Б)</p>
           </li>
 
           <li class="timeline__item timeline__item--wide reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
             <h3>Сессия 1.5–2&nbsp;часа с диагностикой по Навигатору</h3>
-            <p>На сессии через глубинное интервью, составленное именно под ваш запрос, мы находим утечки вашего здоровья, энергии и красоты в питании и образе жизни — смотрим по 5&nbsp;направлениям: рацион, сон, движение, токсины, стресс — обсуждаем и согласуем шаги для закрытия утечек.</p>
+            <p>На сессии через глубинное интервью, составленное именно под ваш запрос, мы находим утечки вашего здоровья, энергии и красоты в питании и образе жизни</p>
+            <p class="timeline__chips-label">Смотрим по 5&nbsp;направлениям:</p>
+            <ul class="chips">
+              <li class="chip">рацион</li>
+              <li class="chip">сон</li>
+              <li class="chip">движение</li>
+              <li class="chip">токсины</li>
+              <li class="chip">стресс</li>
+            </ul>
+            <p>Обсуждаем и согласуем шаги для закрытия утечек</p>
             <figure class="timeline__sample">
               <div class="timeline__sample-grid">
                 <img src="assets/navigator-radar.jpg" alt="Пример пятиосевой схемы Навигатора" loading="lazy" />
@@ -177,7 +237,7 @@
             <h3>Отправка материалов по итогам сессии</h3>
             <p class="muted">(в&nbsp;течение 2&nbsp;рабочих дней после сессии)</p>
             <ul class="ticks">
-              <li>дорожная карта от точки А к точке Б с привычками в питании и образе жизни</li>
+              <li class="ticks__hero">дорожная карта от точки А к точке Б с привычками в питании и образе жизни</li>
               <li>список анализов</li>
               <li>Навигатор как инструмент для самодиагностики</li>
               <li>аудио или видеозапись сессии</li>
@@ -187,7 +247,7 @@
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
             <h3>Ответы на вопросы</h3>
-            <p>В&nbsp;день сессии и 4&nbsp;дня после.</p>
+            <p>В&nbsp;день сессии и 4&nbsp;дня после</p>
           </li>
 
           <li class="timeline__item reveal">
@@ -198,9 +258,13 @@
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
             <h3>Точка касания через 2&nbsp;недели</h3>
-            <p>В&nbsp;чате для оценки прогресса.</p>
+            <p>В&nbsp;чате для оценки прогресса</p>
           </li>
         </ol>
+
+        <p class="section__lead steps__outro reveal">
+          Метод Навигатора позволяет увидеть слепые зоны, комплексно оценить вашу текущую ситуацию по важным направлениям и на основе этого разработать понятный маршрут привычек для наиболее эффективного решения вашего запроса, чтобы не откладывать заботу о себе на потом
+        </p>
 
         <div class="cta-row reveal">
           <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="btn btn--primary btn--cursor btn--large">
@@ -211,8 +275,47 @@
     </section>
 
 
+    <!-- ───────────── ПО МЕРЕ ДВИЖЕНИЯ ПО ДОРОЖНОЙ КАРТЕ ───────────── -->
+    <section class="section section--dark journey">
+      <div class="bloom bloom--lime journey__bloom-1" aria-hidden="true"></div>
+      <div class="bloom bloom--green journey__bloom-2" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--light">Точка А → Точка Б</p>
+          <h2>Что вас ждет по мере движения по дорожной карте?</h2>
+        </header>
+
+        <div class="journey__path">
+          <svg class="journey__line" viewBox="0 0 1200 220" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M 30 180 C 200 50, 400 200, 600 110 S 1000 30, 1170 130"
+                  fill="none" stroke="#C8DC4A" stroke-width="2.2" stroke-dasharray="2 8" stroke-linecap="round"/>
+          </svg>
+
+          <ol class="journey__points">
+            <li class="journey__point reveal">
+              <span class="journey__num">1</span>
+              <p>Замечаете, что вы чувствуете себя энергичнее и бодрее</p>
+            </li>
+            <li class="journey__point reveal">
+              <span class="journey__num">2</span>
+              <p>Ваше настроение улучшилось</p>
+            </li>
+            <li class="journey__point reveal">
+              <span class="journey__num">3</span>
+              <p>Вы быстрее можете выполнять свои задачи, появилось больше сил, чтобы реализовывать все идеи и возможности, а не откладывать на потом</p>
+            </li>
+            <li class="journey__point reveal">
+              <span class="journey__num">4</span>
+              <p>Вы постепенно идете к решению вашего запроса по здоровью с четким пониманием плана действий</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ───────────── ЧТО ВЫ ПОЛУЧИТЕ ───────────── -->
-    <section class="section section--cream">
+    <section class="section section--limesoft" id="benefits">
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Результат</p>
@@ -228,22 +331,122 @@
           <li class="benefits__card reveal">
             <span class="benefits__num">02</span>
             <h3>Дорожная карта с&nbsp;рекомендациями</h3>
-            <p>Для наиболее быстрого и эффективного решения вашего запроса.</p>
+            <p>Вы получите понятный план действий для наиболее быстрого и эффективного решения вашего запроса.</p>
           </li>
           <li class="benefits__card reveal">
             <span class="benefits__num">03</span>
             <h3>Возможность задать вопросы</h3>
-            <p>Все волнующие вопросы о подходящем для вас питании и образе жизни, о чем сигнализирует ваше тело.</p>
+            <p>Вы разберетесь в ключевых волнующих вопросах о подходящем для вас питании и образе жизни, о чем сигнализирует ваше тело.</p>
           </li>
           <li class="benefits__card reveal">
             <span class="benefits__num">04</span>
             <h3>Список анализов под ваш запрос</h3>
-            <p>Которые стоит посмотреть, чтобы глубже и более точно оценить ваше состояние — работу органов, наличие дефицитов по нутриентам, воспаления и т.&nbsp;д.</p>
+            <p>Вы получите перечень важных анализов, которые стоит посмотреть, чтобы глубже и более точно оценить ваше состояние — работу органов, наличие дефицитов по нутриентам, воспаления и т.&nbsp;д.</p>
           </li>
           <li class="benefits__card reveal">
             <span class="benefits__num">05</span>
             <h3>Файл с&nbsp;Навигатором</h3>
-            <p>Выступает как инструмент для самодиагностики: вы сможете возвращаться к нему в дальнейшем и сами сверять свой путь и прогресс.</p>
+            <p>Получите инструмент для самодиагностики: вы сможете возвращаться к нему в дальнейшем и сами сверять свой путь и прогресс.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ───────────── СТОИМОСТЬ ───────────── -->
+    <section class="section section--dark" id="price">
+      <div class="bloom bloom--lime price__bloom" aria-hidden="true"></div>
+      <div class="container">
+        <div class="price reveal">
+          <p class="eyebrow eyebrow--light">Стоимость</p>
+
+          <p class="price__amount">
+            <span class="price__num">4&nbsp;950</span><span class="price__unit">руб.</span>
+          </p>
+
+          <ul class="price__list">
+            <li>Около 2&nbsp;часов сессии с глубокой персонализированной проработкой запроса</li>
+            <li>Адаптация вопросов к&nbsp;конкретному клиенту перед консультацией</li>
+            <li>Подготовка письменных материалов после сессии — структурированная дорожная карта, навигатор как инструмент для самодиагностики, список анализов под ваш запрос</li>
+          </ul>
+
+          <p class="price__save">
+            Только эта сессия может вам сэкономить от 30&nbsp;тыс. рублей на самостоятельное изучение темы, на ненужные анализы.
+          </p>
+
+          <p class="price__limit" role="note">
+            <span class="price__limit-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            Количество мест ограничено. Беру только&nbsp;10 человек в&nbsp;месяц
+          </p>
+
+          <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="btn btn--lime btn--cursor btn--large">
+            Купить
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ───────────── КОГДА СТОИТ ПРИЙТИ ───────────── -->
+    <section class="section section--cream">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Сигнал</p>
+          <h2>Когда особенно стоит прийти на Навигатор?</h2>
+        </header>
+
+        <ul class="bubbles">
+          <li class="bubble reveal">
+            <span class="illust illust--bubble" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M30 30c10-8 30-8 40 0M30 50c10-8 30-8 40 0M30 70c10-8 30-8 40 0" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M58 22l4 8M70 30l-2 4" stroke="#C8DC4A" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="74" cy="38" r="2" fill="#C8DC4A"/>
+              </svg>
+            </span>
+            <p>Много всего в мире здорового питания и образа жизни, трудно разобраться самостоятельно, где миф, а что реально работает и поможет конкретно в вашем случае, не навредит</p>
+          </li>
+          <li class="bubble bubble--alt reveal">
+            <span class="illust illust--bubble" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <rect x="30" y="38" width="18" height="24" rx="2" fill="none" stroke="#2F4A36" stroke-width="1.6"/>
+                <rect x="38" y="30" width="18" height="24" rx="2" fill="none" stroke="#2F4A36" stroke-width="1.6"/>
+                <rect x="46" y="22" width="18" height="24" rx="2" fill="none" stroke="#2F4A36" stroke-width="1.6"/>
+                <path d="M62 60c0 8-4 14-12 14" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="50" cy="78" r="2.5" fill="#C8DC4A"/>
+                <text x="55" y="42" font-family="Quicksand,sans-serif" font-size="13" font-weight="600" fill="#2F4A36">?</text>
+              </svg>
+            </span>
+            <p>Избыток информации в теме ЗОЖ, есть ощущение, что это слишком сложно, долго, непонятно, есть вопрос, с чего стоит начать в первую очередь, чтобы не было расфокуса и откатов</p>
+          </li>
+          <li class="bubble reveal">
+            <span class="illust illust--bubble" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M50 26c8 6 14 16 14 26 0 12-6 22-14 22s-14-10-14-22c0-10 6-20 14-26z" fill="none" stroke="#2F4A36" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M50 38c4 4 8 10 8 16M50 38c-4 4-8 10-8 16" fill="none" stroke="#2F4A36" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="72" cy="32" r="2.5" fill="#C8DC4A"/>
+                <path d="M76 40l4-2M78 46l4 2" stroke="#C8DC4A" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <p>Вроде питаетесь хорошо, полезные привычки уже есть, а энергии все равно не хватает, ходите в уставшем состоянии большую часть дня, хотите увидеть слепые зоны</p>
+          </li>
+          <li class="bubble bubble--alt reveal">
+            <span class="illust illust--bubble" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="url(#il1)"/>
+                <path d="M22 70 C 36 70, 36 30, 50 30 S 64 70, 78 70" fill="none" stroke="#2F4A36" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="22" cy="70" r="3.2" fill="#2F4A36"/>
+                <circle cx="50" cy="30" r="3.2" fill="#C8DC4A" stroke="#2F4A36" stroke-width="1.3"/>
+                <circle cx="78" cy="70" r="3.2" fill="#2F4A36"/>
+                <path d="M82 70l4-2M82 70l4 2" stroke="#2F4A36" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <p>Не хватает структурированного индивидуального плана действий, чтобы не откладывать на потом, когда закончится дедлайн, сдам анализы и&nbsp;т.&nbsp;д., а внедрять простые и действенные шаги уже сейчас, заботиться о своем здоровье и уровне энергии</p>
           </li>
         </ul>
       </div>
@@ -256,7 +459,6 @@
         <header class="section__head reveal">
           <p class="eyebrow">Живые истории</p>
           <h2>Отзывы</h2>
-          <p class="section__lead">Сообщения клиентов — как они есть, прямо из Telegram.</p>
         </header>
       </div>
 
@@ -284,56 +486,8 @@
     </section>
 
 
-    <!-- ───────────── СТОИМОСТЬ ───────────── -->
-    <section class="section section--dark" id="price">
-      <div class="bloom bloom--lime price__bloom" aria-hidden="true"></div>
-      <div class="container">
-        <div class="price reveal">
-          <p class="eyebrow eyebrow--light">Стоимость</p>
-          <p class="price__amount">5000&nbsp;<span>₽</span></p>
-          <p class="price__desc">
-            Навигатор предусматривает около 2&nbsp;часов сессии с глубокой персонализированной проработкой запроса, которая включает адаптацию вопросов к конкретному клиенту перед консультацией и подготовку письменных материалов после — по итогам у вас будет структурированная дорожная карта, навигатор как инструмент для самодиагностики, список анализов под ваш запрос.
-          </p>
-          <p class="price__save">
-            Только эта сессия может вам сэкономить от 30&nbsp;тыс. рублей на самостоятельное изучение темы, на ненужные анализы.
-          </p>
-
-          <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="btn btn--lime btn--cursor btn--large">
-            Купить
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ───────────── КОГДА СТОИТ ПРИЙТИ ───────────── -->
-    <section class="section section--cream">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow">Сигнал</p>
-          <h2>Когда особенно стоит прийти на Навигатор?</h2>
-        </header>
-
-        <ul class="bubbles">
-          <li class="bubble reveal">
-            Много всего в мире здорового питания и образа жизни, трудно разобраться самостоятельно, где миф, а что реально работает и поможет конкретно в вашем случае, не навредит
-          </li>
-          <li class="bubble bubble--alt reveal">
-            Избыток информации в теме ЗОЖ, есть ощущение, что это слишком сложно, долго, непонятно, есть вопрос, с чего стоит начать в первую очередь, чтобы не было расфокуса и откатов
-          </li>
-          <li class="bubble reveal">
-            Вроде питаетесь хорошо, полезные привычки уже есть, а энергии все равно не хватает, ходите в уставшем состоянии большую часть дня, хотите увидеть слепые зоны
-          </li>
-          <li class="bubble bubble--alt reveal">
-            Не хватает структурированного индивидуального плана действий, чтобы не откладывать на потом, когда закончится дедлайн, сдам анализы и&nbsp;т.&nbsp;д., а внедрять простые и действенные шаги уже сейчас, заботиться о своем здоровье и уровне энергии
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
     <!-- ───────────── О СЕБЕ ───────────── -->
-    <section class="section section--soft" id="about-me">
+    <section class="section section--cream" id="about-me">
       <div class="bloom bloom--green about__bloom" aria-hidden="true"></div>
       <div class="container about">
         <div class="about__photo reveal">
@@ -361,7 +515,7 @@
 
 
     <!-- ───────────── FAQ ───────────── -->
-    <section class="section section--cream" id="faq">
+    <section class="section section--limesoft" id="faq">
       <div class="container container--narrow">
         <header class="section__head reveal">
           <p class="eyebrow">Вопрос — ответ</p>
@@ -421,17 +575,38 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="nav__mark" aria-hidden="true"></span>
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 2C8 4 3 10 3 17c0 7 6 13 13 13s14-6 14-14c0-7-6-13-14-14z" fill="url(#logoGrad)"/>
+            <path d="M16 24c-4-3-7-7-7-12 0-3 3-5 7-5s7 2 7 5c0 5-3 9-7 12z" fill="none" stroke="#C8DC4A" stroke-width="1.4"/>
+            <path d="M16 24V11" stroke="#C8DC4A" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
         <div>
           <p class="footer__name">Маргарита&nbsp;Лунева</p>
-          <p class="footer__role">Нутрициолог · медицина образа жизни</p>
+          <p class="footer__role">Питание · медицина образа жизни</p>
         </div>
       </div>
 
-      <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="footer__tg">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.78 15.74 9.6 18.7c.3 0 .43-.13.6-.28l1.42-1.36 2.94 2.15c.54.3.93.14 1.08-.5l1.96-9.17c.18-.81-.29-1.13-.81-.94L4.7 12.86c-.79.3-.78.74-.14.94l3.04.95 7.05-4.45c.33-.21.63-.09.39.13z"/></svg>
-        t.me/margoluneva
-      </a>
+      <div class="footer__contacts">
+        <a href="https://t.me/margoluneva" target="_blank" rel="noopener" class="footer__tg">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.78 15.74 9.6 18.7c.3 0 .43-.13.6-.28l1.42-1.36 2.94 2.15c.54.3.93.14 1.08-.5l1.96-9.17c.18-.81-.29-1.13-.81-.94L4.7 12.86c-.79.3-.78.74-.14.94l3.04.95 7.05-4.45c.33-.21.63-.09.39.13z"/></svg>
+          <span>
+            <span class="footer__tg-label">Личные сообщения</span>
+            <span class="footer__tg-handle">@margoluneva</span>
+          </span>
+        </a>
+
+        <a href="https://t.me/lunelife" target="_blank" rel="noopener" class="footer__tg footer__tg--channel">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M3 11.5L21 4l-3.5 17-5.5-7.5 8-9-10 7L3 11.5z"/>
+          </svg>
+          <span>
+            <span class="footer__tg-label">Telegram-канал</span>
+            <span class="footer__tg-handle">@lunelife</span>
+          </span>
+        </a>
+      </div>
 
       <p class="footer__copy">© <span id="year"></span> Маргарита Лунева</p>
     </div>
