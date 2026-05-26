@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Чашка ромашкового чая">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFCF7"/>
+      <stop offset="100%" stop-color="#E8DDC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg4)"/>
+  <path d="M70 56 Q66 38 80 32" fill="none" stroke="#7FA68A" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M100 56 Q96 36 108 28" fill="none" stroke="#7FA68A" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M130 56 Q126 40 140 36" fill="none" stroke="#7FA68A" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M58 72 Q58 64 66 64 L138 64 Q146 64 146 72 L142 130 Q140 142 128 142 L76 142 Q64 142 62 130 Z" fill="url(#cup)" stroke="#2F4A36" stroke-width="2.6"/>
+  <path d="M146 84 Q166 86 166 106 Q166 126 146 124" fill="none" stroke="#2F4A36" stroke-width="2.6"/>
+  <ellipse cx="102" cy="78" rx="40" ry="6" fill="#C8954A" opacity="0.4"/>
+  <g transform="translate(100 82)">
+    <circle r="4" fill="#F0D060" stroke="#2F4A36" stroke-width="1"/>
+    <g fill="#FFFCF7" stroke="#2F4A36" stroke-width="0.8">
+      <ellipse cx="0" cy="-8" rx="2.5" ry="5"/>
+      <ellipse cx="7" cy="-4" rx="5" ry="2.5"/>
+      <ellipse cx="0" cy="8" rx="2.5" ry="5"/>
+      <ellipse cx="-7" cy="-4" rx="5" ry="2.5"/>
+      <ellipse cx="-5" cy="6" rx="2" ry="4" transform="rotate(40)"/>
+      <ellipse cx="5" cy="6" rx="2" ry="4" transform="rotate(-40)"/>
+    </g>
+  </g>
+  <ellipse cx="100" cy="152" rx="50" ry="5" fill="#2F4A36" opacity="0.12"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Сложенные джинсы с пуговицей">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+    <linearGradient id="denim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A8B79A"/>
+      <stop offset="100%" stop-color="#7F9482"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg2)"/>
+  <ellipse cx="100" cy="150" rx="64" ry="6" fill="#2F4A36" opacity="0.1"/>
+  <path d="M48 70 Q48 64 54 64 L146 64 Q152 64 152 70 L152 134 Q152 140 146 140 L54 140 Q48 140 48 134 Z" fill="url(#denim)" stroke="#2F4A36" stroke-width="2.5"/>
+  <path d="M100 64 L100 140" stroke="#2F4A36" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.55"/>
+  <path d="M48 92 Q100 102 152 92" fill="none" stroke="#FFFCF7" stroke-width="1.6" opacity="0.7"/>
+  <path d="M48 116 Q100 124 152 116" fill="none" stroke="#FFFCF7" stroke-width="1.6" opacity="0.5"/>
+  <circle cx="76" cy="78" r="6" fill="#C8DC4A" stroke="#2F4A36" stroke-width="1.6"/>
+  <circle cx="76" cy="78" r="1.8" fill="#2F4A36"/>
+  <path d="M65 130 Q100 76 135 130" fill="none" stroke="#2F4A36" stroke-width="1" opacity="0.35"/>
+</svg>

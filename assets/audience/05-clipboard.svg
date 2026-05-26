@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Планшет с анализами и ручкой">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg5)"/>
+  <ellipse cx="100" cy="166" rx="56" ry="5" fill="#2F4A36" opacity="0.12"/>
+  <g transform="rotate(-6 100 100)">
+    <rect x="48" y="40" width="100" height="124" rx="8" fill="#D5B493" stroke="#2F4A36" stroke-width="2.4"/>
+    <rect x="56" y="52" width="84" height="106" rx="4" fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.8"/>
+    <rect x="80" y="34" width="40" height="14" rx="3" fill="#2F4A36"/>
+    <rect x="88" y="30" width="24" height="10" rx="2" fill="#A8A8A8" stroke="#2F4A36" stroke-width="1.4"/>
+    <g stroke="#A6BE2E" stroke-width="2.2" stroke-linecap="round">
+      <line x1="64" y1="68" x2="100" y2="68"/>
+    </g>
+    <g stroke="#6B645C" stroke-width="1.4" stroke-linecap="round" opacity="0.7">
+      <line x1="64" y1="82" x2="128" y2="82"/>
+      <line x1="64" y1="92" x2="120" y2="92"/>
+      <line x1="64" y1="102" x2="124" y2="102"/>
+      <line x1="64" y1="112" x2="118" y2="112"/>
+      <line x1="64" y1="122" x2="126" y2="122"/>
+      <line x1="64" y1="132" x2="114" y2="132"/>
+    </g>
+    <circle cx="124" cy="148" r="6" fill="#C8DC4A" stroke="#2F4A36" stroke-width="1.4"/>
+  </g>
+  <g transform="rotate(28 156 110)">
+    <rect x="150" y="64" width="10" height="76" rx="4" fill="#A6BE2E" stroke="#2F4A36" stroke-width="1.8"/>
+    <path d="M150 140 L155 152 L160 140 Z" fill="#2F4A36"/>
+    <rect x="150" y="64" width="10" height="6" fill="#7FA68A" stroke="#2F4A36" stroke-width="1.4"/>
+  </g>
+</svg>

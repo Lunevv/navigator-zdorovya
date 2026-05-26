@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Чек-лист на буфере">
+  <defs>
+    <linearGradient id="sbg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#sbg4)"/>
+  <ellipse cx="100" cy="172" rx="56" ry="5" fill="#2F4A36" opacity="0.14"/>
+  <g transform="rotate(-3 100 100)">
+    <rect x="46" y="40" width="108" height="132" rx="8" fill="#D5B493" stroke="#2F4A36" stroke-width="2.4"/>
+    <rect x="54" y="52" width="92" height="116" rx="3" fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.8"/>
+    <rect x="82" y="32" width="36" height="14" rx="3" fill="#2F4A36"/>
+    <rect x="88" y="28" width="24" height="10" rx="2" fill="#A8A8A8" stroke="#2F4A36" stroke-width="1.4"/>
+    <g>
+      <rect x="62" y="68" width="12" height="12" rx="2" fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.6"/>
+      <path d="M64 74 L69 78 L74 70" fill="none" stroke="#A6BE2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="82" y1="76" x2="136" y2="76" stroke="#6B645C" stroke-width="1.4" opacity="0.7"/>
+    </g>
+    <g>
+      <rect x="62" y="92" width="12" height="12" rx="2" fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.6"/>
+      <path d="M64 98 L69 102 L74 94" fill="none" stroke="#A6BE2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="82" y1="100" x2="130" y2="100" stroke="#6B645C" stroke-width="1.4" opacity="0.7"/>
+    </g>
+    <g>
+      <rect x="62" y="116" width="12" height="12" rx="2" fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.6"/>
+      <path d="M64 122 L69 126 L74 118" fill="none" stroke="#A6BE2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="82" y1="124" x2="138" y2="124" stroke="#6B645C" stroke-width="1.4" opacity="0.7"/>
+    </g>
+    <g>
+      <rect x="62" y="140" width="12" height="12" rx="2" fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.6"/>
+      <line x1="82" y1="148" x2="124" y2="148" stroke="#6B645C" stroke-width="1.4" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Стопка книг с лупой">
+  <defs>
+    <linearGradient id="sbg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#sbg1)"/>
+  <ellipse cx="100" cy="166" rx="62" ry="5" fill="#2F4A36" opacity="0.14"/>
+  <rect x="40" y="138" width="120" height="22" rx="3" fill="#7FA68A" stroke="#2F4A36" stroke-width="2.2"/>
+  <line x1="46" y1="148" x2="60" y2="148" stroke="#FFFCF7" stroke-width="1.4" opacity="0.7"/>
+  <rect x="48" y="116" width="108" height="22" rx="3" fill="#D5B493" stroke="#2F4A36" stroke-width="2.2"/>
+  <line x1="54" y1="126" x2="74" y2="126" stroke="#FFFCF7" stroke-width="1.4" opacity="0.7"/>
+  <rect x="44" y="94" width="116" height="22" rx="3" fill="#C8DC4A" stroke="#2F4A36" stroke-width="2.2"/>
+  <line x1="52" y1="104" x2="68" y2="104" stroke="#2F4A36" stroke-width="1.4" opacity="0.55"/>
+  <g transform="translate(118 56)">
+    <circle r="26" fill="#FFFCF7" fill-opacity="0.6" stroke="#2F4A36" stroke-width="3"/>
+    <circle r="22" fill="none" stroke="#2F4A36" stroke-width="0.8" opacity="0.4"/>
+    <line x1="19" y1="19" x2="38" y2="38" stroke="#2F4A36" stroke-width="6" stroke-linecap="round"/>
+    <line x1="19" y1="19" x2="38" y2="38" stroke="#A6BE2E" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

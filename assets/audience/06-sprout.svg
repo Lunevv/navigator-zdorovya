@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Росток в горшке">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5B493"/>
+      <stop offset="100%" stop-color="#A87E58"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg6)"/>
+  <ellipse cx="100" cy="172" rx="58" ry="5" fill="#2F4A36" opacity="0.15"/>
+  <path d="M100 116 Q98 90 96 70" fill="none" stroke="#2F4A36" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M96 84 Q80 78 70 64 Q86 64 96 78 Z" fill="#C8DC4A" stroke="#2F4A36" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M98 70 Q108 60 124 56 Q120 72 102 80 Z" fill="#A6BE2E" stroke="#2F4A36" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M83 72 Q88 78 91 81" fill="none" stroke="#2F4A36" stroke-width="1" opacity="0.6"/>
+  <path d="M112 64 Q105 71 102 76" fill="none" stroke="#2F4A36" stroke-width="1" opacity="0.6"/>
+  <path d="M62 124 Q62 116 70 116 L130 116 Q138 116 138 124 L132 156 Q130 166 122 166 L78 166 Q70 166 68 156 Z" fill="url(#pot)" stroke="#2F4A36" stroke-width="2.6"/>
+  <path d="M62 124 L138 124" stroke="#2F4A36" stroke-width="2"/>
+  <ellipse cx="100" cy="120" rx="36" ry="4" fill="#4A2E1E" opacity="0.5"/>
+  <circle cx="138" cy="50" r="2.6" fill="#A6BE2E"/>
+  <circle cx="150" cy="62" r="1.8" fill="#A6BE2E" opacity="0.6"/>
+</svg>

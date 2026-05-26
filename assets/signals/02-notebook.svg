@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Раскрытый блокнот с вопросом">
+  <defs>
+    <linearGradient id="sbg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#sbg2)"/>
+  <ellipse cx="100" cy="166" rx="64" ry="5" fill="#2F4A36" opacity="0.14"/>
+  <g transform="rotate(-4 100 110)">
+    <path d="M30 60 Q30 56 36 56 L98 56 L100 158 L36 158 Q30 158 30 154 Z" fill="#FFFCF7" stroke="#2F4A36" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M170 60 Q170 56 164 56 L102 56 L100 158 L164 158 Q170 158 170 154 Z" fill="#FFFCF7" stroke="#2F4A36" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="100" y1="56" x2="100" y2="158" stroke="#2F4A36" stroke-width="2.4"/>
+    <g stroke="#6B645C" stroke-width="1.2" stroke-linecap="round" opacity="0.6">
+      <line x1="40" y1="78" x2="90" y2="78"/>
+      <line x1="40" y1="92" x2="86" y2="92"/>
+      <line x1="40" y1="106" x2="92" y2="106"/>
+      <line x1="40" y1="120" x2="78" y2="120"/>
+      <line x1="40" y1="134" x2="88" y2="134"/>
+    </g>
+    <g fill="#2F4A36" font-family="Georgia, serif" font-size="58" font-weight="700">
+      <text x="124" y="124">?</text>
+    </g>
+    <circle cx="151" cy="78" r="3" fill="#C8DC4A"/>
+  </g>
+</svg>

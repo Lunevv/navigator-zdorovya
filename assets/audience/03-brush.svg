@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Деревянная расчёска">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5B493"/>
+      <stop offset="100%" stop-color="#B58E66"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg3)"/>
+  <ellipse cx="100" cy="156" rx="56" ry="5" fill="#2F4A36" opacity="0.12"/>
+  <g transform="rotate(-22 100 100)">
+    <rect x="48" y="86" width="104" height="38" rx="14" fill="url(#wood)" stroke="#2F4A36" stroke-width="2.4"/>
+    <path d="M62 90 Q70 102 64 118" fill="none" stroke="#FFFCF7" stroke-width="1.2" opacity="0.55"/>
+    <path d="M82 89 Q86 102 80 117" fill="none" stroke="#FFFCF7" stroke-width="1" opacity="0.4"/>
+    <g fill="#FFFCF7" stroke="#2F4A36" stroke-width="1.4">
+      <circle cx="62" cy="124" r="3"/>
+      <circle cx="74" cy="124" r="3"/>
+      <circle cx="86" cy="124" r="3"/>
+      <circle cx="98" cy="124" r="3"/>
+      <circle cx="110" cy="124" r="3"/>
+      <circle cx="122" cy="124" r="3"/>
+      <circle cx="134" cy="124" r="3"/>
+      <circle cx="146" cy="124" r="3"/>
+    </g>
+    <g stroke="#2F4A36" stroke-width="1.8" stroke-linecap="round">
+      <line x1="62" y1="128" x2="62" y2="146"/>
+      <line x1="74" y1="128" x2="74" y2="148"/>
+      <line x1="86" y1="128" x2="86" y2="149"/>
+      <line x1="98" y1="128" x2="98" y2="150"/>
+      <line x1="110" y1="128" x2="110" y2="149"/>
+      <line x1="122" y1="128" x2="122" y2="148"/>
+      <line x1="134" y1="128" x2="134" y2="146"/>
+      <line x1="146" y1="128" x2="146" y2="144"/>
+    </g>
+  </g>
+  <circle cx="148" cy="46" r="3" fill="#A6BE2E"/>
+  <circle cx="162" cy="58" r="2" fill="#A6BE2E" opacity="0.6"/>
+</svg>
