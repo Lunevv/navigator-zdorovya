@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Напольные весы со шкалой, стрелка зашкаливает">
+  <defs>
+    <linearGradient id="bgS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#E6DCC4"/>
+    </linearGradient>
+    <linearGradient id="plateS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBF4E4"/>
+      <stop offset="100%" stop-color="#ECE2CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bgS)"/>
+  <ellipse cx="100" cy="172" rx="64" ry="7" fill="#2F4A36" opacity="0.12"/>
+
+  <!-- корпус напольных весов (вид сверху, скруглённый квадрат) -->
+  <rect x="38" y="46" width="124" height="120" rx="24" fill="#2F4A36"/>
+  <rect x="44" y="52" width="112" height="108" rx="20" fill="url(#plateS)" stroke="#2F4A36" stroke-width="2"/>
+
+  <!-- рифление под ногами по углам -->
+  <g fill="#2F4A36" opacity="0.10">
+    <circle cx="62" cy="70" r="7"/>
+    <circle cx="138" cy="70" r="7"/>
+    <circle cx="62" cy="142" r="7"/>
+    <circle cx="138" cy="142" r="7"/>
+  </g>
+
+  <!-- окно полукруглой шкалы (гейдж) -->
+  <path d="M58 120 A42 42 0 0 1 142 120 Z" fill="#FBF4E4" stroke="#2F4A36" stroke-width="2.4"/>
+
+  <!-- дуга шкалы + «зашкаливающая» зона справа -->
+  <path d="M64 120 A36 36 0 0 1 136 120" fill="none" stroke="#2F4A36" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 92 A36 36 0 0 1 136 120" fill="none" stroke="#A6BE2E" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- деления шкалы -->
+  <g stroke="#2F4A36" stroke-width="1.8" stroke-linecap="round">
+    <line x1="64"  y1="120" x2="72"  y2="120"/>
+    <line x1="70"  y1="102" x2="76"  y2="106"/>
+    <line x1="84"  y1="90"  x2="88"  y2="96"/>
+    <line x1="100" y1="86"  x2="100" y2="94"/>
+    <line x1="116" y1="90"  x2="112" y2="96"/>
+    <line x1="130" y1="102" x2="124" y2="106"/>
+    <line x1="136" y1="120" x2="128" y2="120"/>
+  </g>
+
+  <!-- стрелка зашкаливает: уходит за максимум вправо -->
+  <line x1="100" y1="120" x2="140" y2="116" stroke="#4A2E1E" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="100" cy="120" r="6" fill="#2F4A36"/>
+  <circle cx="100" cy="120" r="2.2" fill="#C8DC4A"/>
+
+  <!-- восклицательный акцент у конца стрелки -->
+  <circle cx="150" cy="113" r="9" fill="#C8DC4A" stroke="#2F4A36" stroke-width="1.8"/>
+  <line x1="150" y1="108.5" x2="150" y2="114" stroke="#2F4A36" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="150" cy="117.5" r="1.3" fill="#2F4A36"/>
+
+  <!-- лёгкие солнечные блики -->
+  <circle cx="168" cy="48" r="3" fill="#A6BE2E"/>
+  <circle cx="178" cy="60" r="2" fill="#A6BE2E" opacity="0.6"/>
+</svg>

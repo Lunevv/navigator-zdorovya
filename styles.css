@@ -1,7 +1,7 @@
 /* ============================================================
    Навигатор здоровья — лендинг Маргариты Луневой
    Палитра: молочный, лаймовый, тёмно-зелёный, шоколадный
-   Шрифты: Quicksand (округлый sans для заголовков) + Inter (текст)
+   Шрифты: EB Garamond italic (заголовки 1 ур.) + Quicksand (подзаголовки/UI) + Inter (текст)
    ============================================================ */
 
 :root {
@@ -31,7 +31,7 @@
 
   --font-head: 'Quicksand', system-ui, -apple-system, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Bad Script', 'Marck Script', cursive;
+  --font-display: 'EB Garamond', 'Georgia', 'Times New Roman', serif;
 }
 
 * { box-sizing: border-box; }
@@ -75,26 +75,28 @@ h1, h2, h3 {
 
 h2 {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 3.9vw + 1rem, 4.1rem);
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.02;
+  font-style: italic;
+  font-size: clamp(2.7rem, 4.1vw + 1rem, 4.4rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.04;
   padding-bottom: 0.12em;
 }
 h3 { font-size: clamp(1.18rem, 0.5vw + 1rem, 1.45rem); font-weight: 600; }
 
 .display {
   font-family: var(--font-display);
-  font-size: clamp(3.7rem, 8.8vw, 7rem);
-  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(4rem, 9.4vw, 7.6rem);
+  font-weight: 500;
   color: var(--green-deep);
   margin-bottom: 0.2em;
-  letter-spacing: 0.01em;
-  line-height: 0.96;
+  letter-spacing: 0;
+  line-height: 1.0;
   padding-bottom: 0.1em;
 }
 .display em {
-  font-style: normal;
+  font-style: italic;
   color: var(--lime-deep);
 }
 
@@ -117,6 +119,7 @@ p { margin: 0 0 1em; }
   color: var(--green-deep);
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 2.4em;
 }
 
 .muted { color: var(--ink-soft); font-size: 0.92em; }
@@ -273,6 +276,17 @@ p { margin: 0 0 1em; }
 .nav__menu a.is-active::after { transform: scaleX(1); }
 .nav__menu a.is-active { color: var(--lime-deep); }
 
+/* Перекрёстная ссылка на смежный сайт (Навигатор ↔ Сопровождение) */
+.nav__menu a.nav__cross {
+  padding: 7px 16px;
+  border: 1px solid var(--green-deep);
+  border-radius: var(--r-pill);
+  color: var(--green-deep);
+  transition: background .25s ease, color .25s ease;
+}
+.nav__menu a.nav__cross::after { display: none; }
+.nav__menu a.nav__cross:hover { background: var(--green-deep); color: var(--cream); }
+
 .nav__burger {
   display: none;
   width: 40px; height: 40px;
@@ -390,11 +404,13 @@ p { margin: 0 0 1em; }
 }
 
 .hero__copy { max-width: 580px; }
+.hero__copy .display { margin-bottom: 0.7em; }
 .hero__sub {
   font-family: var(--font-head);
   font-size: clamp(1.15rem, 0.5vw + 1rem, 1.4rem);
   font-weight: 500;
   color: var(--green-deep);
+  margin-top: 0.7em;
   margin-bottom: 1em;
   line-height: 1.35;
 }
@@ -685,14 +701,30 @@ p { margin: 0 0 1em; }
 }
 
 .steps__outro {
-  max-width: 760px;
-  margin: clamp(40px, 4vw, 56px) auto 0;
-  text-align: center;
-  font-family: var(--font-head);
-  font-weight: 500;
+  position: relative;
+  max-width: 680px;
+  margin: clamp(44px, 4.5vw, 64px) auto 0;
+  padding: 8px 4px 8px 30px;
+  text-align: left;
+  border-left: 3px solid var(--lime);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
   color: var(--green-deep);
-  font-size: clamp(1.05rem, 0.4vw + 1rem, 1.2rem);
+  font-size: clamp(1.05rem, 0.4vw + 0.98rem, 1.3rem);
   line-height: 1.5;
+}
+.steps__outro::before {
+  content: "“";
+  position: absolute;
+  left: 14px;
+  top: -0.32em;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 3.2em;
+  line-height: 1;
+  color: var(--lime-deep);
+  opacity: 0.5;
 }
 
 .cta-row {
@@ -999,21 +1031,21 @@ p { margin: 0 0 1em; }
   margin-inline: auto;
 }
 .bubble {
-  background: var(--white);
+  background: var(--green-deep);
   padding: 26px 28px;
   border-radius: 28px 28px 28px 6px;
   font-size: 1rem;
-  color: var(--ink);
-  border: 1px solid rgba(127, 166, 138, .18);
+  color: var(--cream);
+  border: 1px solid rgba(200, 220, 74, .28);
   position: relative;
   transition: transform .3s ease, box-shadow .3s ease;
   display: flex;
   gap: 20px;
   align-items: flex-start;
 }
-.bubble:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.bubble:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .bubble--alt {
-  background: var(--lime-soft);
+  background: #264032;
   border-radius: 28px 28px 6px 28px;
 }
 .bubble p { margin: 0; }
