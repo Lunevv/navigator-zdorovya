@@ -947,7 +947,7 @@ p { margin: 0 0 1em; }
   font-family: var(--font-head);
   font-size: clamp(1.4rem, 1.4vw + 0.8rem, 2rem);
   font-weight: 500;
-  color: var(--cream);
+  color: var(--lime);
   align-self: flex-end;
   padding-bottom: 0.4em;
 }
