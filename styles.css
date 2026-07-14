@@ -711,7 +711,7 @@ p { margin: 0 0 1em; }
   font-style: italic;
   font-weight: 400;
   color: var(--green-deep);
-  font-size: clamp(1.15rem, 0.5vw + 1.05rem, 1.42rem);
+  font-size: clamp(1.05rem, 0.4vw + 0.98rem, 1.3rem);
   line-height: 1.5;
 }
 .steps__outro::before {
@@ -737,9 +737,9 @@ p { margin: 0 0 1em; }
 /* ============================================================
    Journey (новый блок «По мере движения по дорожной карте»)
    ============================================================ */
-.journey { color: var(--ink); }
-.journey__bloom-1 { width: 480px; height: 480px; top: -100px; left: -160px; opacity: .16; }
-.journey__bloom-2 { width: 420px; height: 420px; bottom: -160px; right: -120px; opacity: .16; }
+.journey { color: var(--cream); }
+.journey__bloom-1 { width: 480px; height: 480px; top: -100px; left: -160px; opacity: .25; }
+.journey__bloom-2 { width: 420px; height: 420px; bottom: -160px; right: -120px; opacity: .25; }
 
 .journey__path {
   position: relative;
@@ -803,7 +803,7 @@ p { margin: 0 0 1em; }
 .journey__point p {
   font-size: 0.98rem;
   line-height: 1.5;
-  color: var(--ink-soft);
+  color: rgba(247, 241, 230, 0.92);
   margin: 0;
   max-width: 260px;
 }
@@ -852,7 +852,7 @@ p { margin: 0 0 1em; }
   margin-bottom: 14px;
   letter-spacing: 0.05em;
 }
-.benefits__card h3 { margin-bottom: 0.5em; color: var(--ink); }
+.benefits__card h3 { margin-bottom: 0.5em; }
 .benefits__card p { margin: 0; color: var(--ink); font-size: 0.97rem; }
 
 
@@ -947,7 +947,7 @@ p { margin: 0 0 1em; }
   font-family: var(--font-head);
   font-size: clamp(1.4rem, 1.4vw + 0.8rem, 2rem);
   font-weight: 500;
-  color: var(--cream);
+  color: var(--lime);
   align-self: flex-end;
   padding-bottom: 0.4em;
 }
@@ -1031,7 +1031,7 @@ p { margin: 0 0 1em; }
   margin-inline: auto;
 }
 .bubble {
-  background: #41604C;
+  background: var(--green-deep);
   padding: 26px 28px;
   border-radius: 28px 28px 28px 6px;
   font-size: 1rem;
@@ -1045,7 +1045,7 @@ p { margin: 0 0 1em; }
 }
 .bubble:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .bubble--alt {
-  background: #385441;
+  background: #264032;
   border-radius: 28px 28px 6px 28px;
 }
 .bubble p { margin: 0; }
